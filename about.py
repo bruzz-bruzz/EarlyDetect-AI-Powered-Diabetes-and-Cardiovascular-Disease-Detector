@@ -14,7 +14,7 @@ This project is a health risk assessment tool designed to help users assess thei
 ### Technologies
 - **Python**: Core programming language.
 - **Streamlit**: For the web interface.
-- **XGBoost/RandomForest**: Machine learning models for predictions.
+- **XGBoost/CatBoost**: Machine learning models for predictions.
 - **SHAP**: For model interpretability.
 
 ### Disclaimer
