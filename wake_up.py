@@ -7,18 +7,25 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 chrome_options = Options()
-chrome_options.add_argument("--headless=new") 
+chrome_options.add_argument("--headless=new")
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--disable-gpu")
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
-URL = "https://sbskkz5w96tlxlsmvkcha7.streamlit.app/" 
+driver = webdriver.Chrome(
+    service=Service(ChromeDriverManager().install()), options=chrome_options
+)
+URL = "https://jdvqemzzwpxzpmkxhribpl.streamlit.app/about"
 try:
-    print(f"Visiting URL: {URL}")
+    print(f"Visiting URL: {URL }")
     driver.get(URL)
     wait = WebDriverWait(driver, 20)
     wake_up_button = wait.until(
-        EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'back up') or contains(., 'back up')]"))
+        EC.element_to_be_clickable(
+            (
+                By.XPATH,
+                "//button[contains(text(), 'back up') or contains(., 'back up')]",
+            )
+        )
     )
     print("App is asleep! Clicking the 'Wake Up' button...")
     wake_up_button.click()

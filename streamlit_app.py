@@ -1,12 +1,11 @@
 import streamlit as st
+st.title("EarlyDetect")
 pages = {
-    "Models":[
-        st.Page("diabetes.py",title='Diabetes Model'),
-        st.Page("heart.py",title='Heart Model')
+    "Models": [
+        st.Page("diabetes.py", title="Diabetes Model"),
+        st.Page("heart.py", title="Heart Model"),
     ],
-    'About':[
-        st.Page("about.py",title='About')
-    ]
+    "About": [st.Page("about.py", title="About")],
 }
 pg = st.navigation(pages)
 pg.run()
