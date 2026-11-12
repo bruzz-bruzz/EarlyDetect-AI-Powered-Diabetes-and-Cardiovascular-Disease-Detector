@@ -22,4 +22,4 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run Wake Up Script
-      run: python wake_up_heart.py
+      run: python wake_up.py

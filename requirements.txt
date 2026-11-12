@@ -6,3 +6,6 @@ joblib
 numpy
 selenium
 webdriver-manager
+shap
+catboost
+xgboost
