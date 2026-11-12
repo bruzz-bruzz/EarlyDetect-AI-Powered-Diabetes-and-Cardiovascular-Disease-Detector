@@ -32,7 +32,7 @@ def get_explanation(input_df):
 st.set_page_config(
     page_title="Cardiovascular Health Predictor", page_icon="💖", layout="wide"
 )
-st.title("EarlyDetect/heart")
+st.title("EarlyDetect/heart-predictor")
 st.write("Enter your health metrics below to assess your cardiovascular health risk.")
 with st.form("input_form"):
     st.subheader("Patient Information")

@@ -39,7 +39,7 @@ def get_explanation(input_df):
 
 
 st.set_page_config(page_title="Diabetes Risk Predictor", page_icon="🍬", layout="wide")
-st.title("EarlyDetect/diabetes")
+st.title("EarlyDetect/diabetes-predictor")
 st.write("Enter your health metrics below to assess your diabetes risk.")
 with st.form("input_form"):
     st.subheader("Patient Information")
