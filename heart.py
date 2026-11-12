@@ -32,7 +32,7 @@ def get_explanation(input_df):
 st.set_page_config(
     page_title="Cardiovascular Health Predictor", page_icon="💖", layout="wide"
 )
-st.title("EarlyDetect/heart-predictor")
+st.title("EarlyDetect/cardiovascular-disease-predictor")
 st.write("Enter your health metrics below to assess your cardiovascular health risk.")
 with st.form("input_form"):
     st.subheader("Patient Information")
@@ -140,12 +140,12 @@ if submit_button:
     result, input_df = predict_health(features)
     st.markdown("---")
     if result == 1:
-        st.error("### Prediction: High risk of heart disease.")
+        st.error("### Prediction: High risk of cardiovascular disease.")
         st.write(
             "Based on the provided metrics, there is a higher probability of cardiovascular disease. Please consult a healthcare professional for a detailed evaluation."
         )
     else:
-        st.success("### Prediction: Low risk of heart disease.")
+        st.success("### Prediction: Low risk of cardiovascular disease.")
         st.write(
             "Based on the provided metrics, there is a lower probability of cardiovascular disease. Continue maintaining a healthy lifestyle."
         )

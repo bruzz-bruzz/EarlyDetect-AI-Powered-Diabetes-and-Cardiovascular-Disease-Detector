@@ -1,7 +1,7 @@
 import streamlit as st
 st.title("About EarlyDetect")
 st.markdown("""
-This project is a health risk assessment tool designed to help users assess their risk for both diabetes and heart disease. It utilizes machine learning models trained with Python, integrated into a user-friendly Streamlit web application.
+This project is a health risk assessment tool designed to help users assess their risk for both diabetes and cardiovascular disease. It utilizes machine learning models trained with Python, integrated into a user-friendly Streamlit web application.
 - **Diabetes Risk Prediction**: Assesses diabetes risk based on clinical features such as age, gender, BMI, HbA1c levels, and blood glucose.
 - **Cardiovascular Disease Risk Prediction**: Assesses cardiovascular disease risk based on clinical metrics like blood pressure, cholesterol, and lifestyle factors.
 - **Explainability**: Uses SHAP (SHapley Additive exPlanations) to provide insights into which health metrics influenced each prediction, helping users understand the reasoning behind their results.
